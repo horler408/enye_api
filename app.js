@@ -37,6 +37,7 @@ app.get('/api/rates', (req, res) => {
     }    
 });
 
+//Redirect Not Foundendpoints
 app.get('*', (req, res) => {
     res.status(404).json({
         message: 'Route Not Found!'
